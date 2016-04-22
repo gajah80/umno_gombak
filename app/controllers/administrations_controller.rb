@@ -25,17 +25,6 @@ class AdministrationsController < ApplicationController
   def destroy
   end
 
-  def seed
-    @admin = Administration.new
-    @admin.username = "Ali"
-    @admin.password = "Ali"
-    @admin.email = "Ali"
-    @admin.role = "Ali"
-    @admin.cawangan_id = 2
-    @admin.save
-    redirect_to administrations_path
-  end
-
   private
   def params_administration
     params.require(:administration).permit(:username, :password, :email, :role, :cawangan_id)    
