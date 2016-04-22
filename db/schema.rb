@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 20160421050708) do
     t.string   "password_digest"
     t.string   "role"
     t.integer  "cawangan_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "cawangans", force: :cascade do |t|

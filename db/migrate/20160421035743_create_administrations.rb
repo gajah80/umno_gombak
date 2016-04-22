@@ -3,7 +3,7 @@ class CreateAdministrations < ActiveRecord::Migration
     create_table :administrations do |t|
       t.string :username
       t.string :email
-      t.string :pasword_digest
+      t.string :password_digest
       t.string :role
       t.integer :cawangan_id
 

@@ -1,4 +1,4 @@
 class Cawangan < ActiveRecord::Base
-	has_and_belongs_to_many :administration
+	has_many :administrations
 
 end

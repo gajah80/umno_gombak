@@ -1,11 +1,15 @@
-<h1>Administrations#new</h1>
-<p>Find me in app/views/administrations/new.html.erb</p>
+<div class="container">
+    <div class="row">
+        <h1>Administrations</h1>
+        <hr />
 
-<%= simple_form_for @administration do |f|%>
-	<%= f.input :username %>
-	<%= f.input :email %>
-	<%= f.input :password %>
-	<%= f.select :cawangan_id , Cawangan.all.map {|r| [r.nama, r.id]} %>
-	<%= f.input :role,collection: ["War Room", "Admin"],prompt: "---Sila pilih satu---" %>
-	<%= f.submit "save" %>
-<%end%>
+        <%= simple_form_for @administration do |f|%>
+        	<%= f.input :username %>
+        	<%= f.input :email %>
+        	<%= f.input :password %>
+        	<%= f.select :cawangan_id , Cawangan.all.map {|r| [r.nama, r.id]} %>
+        	<%= f.input :role,collection: ["War Room", "Admin"],prompt: "---Sila pilih satu---" %>
+        	<%= f.submit "save" %>
+        <%end%>
+    </div>
+</div>
